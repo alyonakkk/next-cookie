@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 export const getServerSideProps = async (context) => {
 	const {req, res} = context;
 
-	res.setHeader("Set-Cookie", [`userDomain=blabla; Path=/;`]);
+	res.setHeader("Set-Cookie", [`userDomain=blabla; Path=/; Domain=.vercel.app`]);
 
 	return {
 		props: {}
